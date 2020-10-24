@@ -15,6 +15,7 @@ class Profile(models.Model):
       null=True
     )
 
+    prueba = models.CharField(max_legth=100, blank=True)   
     create = models.DateTimeField(auto_now_add = True)
     modify = models.DateTimeField(auto_now = True)
 
