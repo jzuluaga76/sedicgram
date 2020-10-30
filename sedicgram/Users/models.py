@@ -15,7 +15,11 @@ class Profile(models.Model):
       null=True
     )
 
+<<<<<<< HEAD
     
+=======
+    prueba = models.CharField(max_legth=100, blank=True)   
+>>>>>>> b8731acc99a1c019cc0685631a58f838691d4c82
     create = models.DateTimeField(auto_now_add = True)
     modify = models.DateTimeField(auto_now = True)
 
