@@ -15,6 +15,7 @@ class Profile(models.Model):
       null=True
     )
 
+    
     create = models.DateTimeField(auto_now_add = True)
     modify = models.DateTimeField(auto_now = True)
 

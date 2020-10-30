@@ -1,0 +1,34 @@
+{% load static %}
+
+<nav>
+    <div class="container">
+        <a href="">
+            <img src="{% static 'img/logoinstagram.png' %}" alt="">
+        </a>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                <a>
+                    {% if request.Users.profile_picture %}
+                        <img src="{}" alt="">
+                    {% else %}
+                        <img src="{ static 'img/default.png'}" alt=''>
+                </a>
+            </li>
+            <li>
+                <a href="">
+
+                    <i></i>
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

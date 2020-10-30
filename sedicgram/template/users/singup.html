@@ -1,0 +1,17 @@
+{ % extends "Users/base.html" % }
+
+{% bloack head_content %}
+    <title> Sign Up Sedicgram </title>
+{% enblock %}
+
+{% block container %}
+    <form action="{% url 'Users:signup' %}">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Register</button>
+
+    </form>
+
+{% endblock %}
